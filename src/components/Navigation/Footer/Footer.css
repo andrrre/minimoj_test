@@ -1,0 +1,147 @@
+.Footer {
+    margin-top: 50px;
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Footer > div {
+    width: 32%;
+}
+
+.Footer img {
+    width: 50%;
+    padding-top: 25px;
+}
+
+
+.OurStory p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.OurStory ul {
+    list-style: none;
+    padding: 0;
+}
+
+.OurStory li {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.OurStory a {
+    text-decoration: none;
+    color: black;
+}
+
+.NewsSubscriber p {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.NewsSubscriber button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: solid black;
+    outline: none;
+    cursor: pointer;
+    height: 90%;
+    margin-top: 2px;
+    width: 25%;
+    font-size: 1.2vw;
+}
+
+.NewsSubscriber input {
+    border: none;
+    height: 90%;
+    outline: none;
+    width: 60%;
+}
+
+.NewsSubscriber button {
+    height: 90%;
+}
+
+.NewsSubscriber div {
+    border: solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Footer > div:first-child p {
+    width: 90%;
+    margin: 15px 0 50px 0;
+    display: block;
+}
+
+.Footer > div:first-child div {
+    height: 40% !important;
+    width: 25% !important;
+}
+
+.Footer > div:last-child * {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+}
+
+.Footer p {
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .Hiden {
+        display: none;
+    }
+
+    .Footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .Footer > div {
+        width: 100%;
+    }
+
+    .NewsSubscriber p {
+        margin-bottom: 5px;
+    }
+
+    .NewsSubscriber {
+        margin: 10px 0 25px 0;
+        display: flex;
+        align-items: right;
+        box-sizing: border-box;
+    }
+
+    .NewsSubscriber div {
+        width: 40%;
+    }
+
+    .NewsSubscriber button {
+        padding: 0;
+        font-size: 2vw;
+    }
+
+    .Year {
+        text-align: center;
+    }
+}

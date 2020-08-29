@@ -1,0 +1,21 @@
+.Favorite {
+    padding: 38px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.Favorite h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+.FavoriteP {
+    width: 100%;
+    text-align: center;
+    color: rgb(8, 104, 117);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}

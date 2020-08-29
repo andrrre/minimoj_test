@@ -1,0 +1,37 @@
+.ProductCard {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Card {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+.ImageWrapper {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.Like {
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.Card a {
+    text-decoration: none;
+}

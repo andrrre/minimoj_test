@@ -1,0 +1,24 @@
+.Filter {
+    display: flex;
+    flex-flow: row;
+    z-index: 99;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.FilterSelect {
+    width: 13%;
+    z-index: 99;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .Filter {
+        flex-flow: column;
+        z-index: 100;
+    }
+
+    .FilterSelect {
+        width: 100%;
+    }
+}

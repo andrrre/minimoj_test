@@ -1,0 +1,65 @@
+.Input {
+    width: 50%;
+    height: 50%;
+    padding: 1px;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid #ccc;
+    justify-content: left;
+    margin-left: 10%;
+}
+
+.Input > form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.InputElement {
+    outline: none;
+    background-color: white;
+    border: none;
+    font: inherit;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.SearchIcon {
+    text-align: center;
+    width: 10%;
+}
+
+.InputElement:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .Input {
+        display: none;
+    }
+
+    .SearchShow {
+        width: 80%;
+        height: 50%;
+        padding: 1px;
+        display: fixed;
+        border: 1px solid #ccc;
+        top: 60px;
+    }
+
+    .InputElement{
+        display: flex;
+        position: fixed;
+        top: 60px;
+        left: 20px;
+        border: 1px solid #ccc;
+        width: 80%;
+    }
+
+    .SearchIcon {
+        display: none;
+    }
+}

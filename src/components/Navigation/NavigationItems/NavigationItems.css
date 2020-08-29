@@ -1,0 +1,46 @@
+.Navigation {
+    width: 10%;
+    box-sizing: border-box;
+    margin-right: 5%;
+}
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.NavigationItems a {
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.MobNavigationItems {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .NavigationItems {
+        display: none;
+    }
+
+    .Navigation {
+        margin-right: 10%;
+    }
+
+    .MobNavigationItems {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+.Toolbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.Toolbar a {
+    height: 100%;
+}
+
+.Logo {
+    height: 100%;
+    margin: 10px 0 0 5px;
+}
+
+.Hidden {
+    transform: translateY(-110%);
+  }
+
+.Navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    width: inherit;
+    padding: 0;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.Navigation div:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.Navigation li {
+    padding: 10px 0 0 0;
+    margin-top: 0;
+}
+
+.NavigationLogo {
+    width: 80px;
+    height: 25px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.NavigationLogoHiden {
+    display: none;
+}
+
+.NavigationUp {
+    transform: translateY(-115%);
+}
+
+.Link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin: 0 !important;
+    box-sizing: border-box;
+    padding: 15px 0 0 0;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .DesktopOnly {
+        display: none;
+    }
+
+    .Toolbar {
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    .Navigation {
+        display: none;
+    }
+
+    .NavigationLogo {
+        width: 15%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .Logo {
+        margin: 0;
+    }
+
+    /* .Logo {
+        margin-left: 120%;
+        height: 80%;
+    } */
+
+    nav {
+        position: fixed;
+        z-index: 100;
+        right: 0;
+    }
+}

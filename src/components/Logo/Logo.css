@@ -1,0 +1,20 @@
+.Logo {
+    background-color: white;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 0;
+    width: 70px;
+    margin: 3px;
+}
+
+.Logo img {
+    height: 70%;
+}
+
+@media (max-width: 768px) {
+    .Logo {
+        margin: 0;
+        width: 20vw;
+        padding-top: 20px;
+    }
+}

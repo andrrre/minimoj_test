@@ -1,0 +1,25 @@
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    background-color: rgb(160, 158, 158);
+    opacity: 0.44;
+}
+
+.Cross {
+    background-image: url("../../../assets//images/close.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    right: 40px;
+    top: 110px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 4;
+  }
+  

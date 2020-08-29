@@ -1,0 +1,140 @@
+.MainImage {
+    background-image: url('../../assets/images/kids.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.MainImage > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-flow: column;
+    width: 80%;
+}
+
+.MainImage > div > h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.MainImage > div > p {
+    color: white;
+    font-size: 2rem;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.MainBrand {
+    width: 90%;
+    height: auto;
+    margin: 10% auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.MainBrand a {
+    display: flex;
+    height: 100%;
+    width: 10%;
+}
+
+.MainBrand img {
+    height: 80%;
+    width: 80%;
+}
+
+.News {
+    width: 90%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10% auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.News > div {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+} 
+
+.News a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+@media (max-width: 768px) {
+    .MainImage {
+        background-size: cover;
+        background-position: "center center";
+        height: 50vh;
+        background-repeat: no-repeat;
+    }
+
+    .MainImage > div > h2 {
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+
+    .MainImage > div > p {
+        color: white;
+        font-size: 1rem;
+        text-shadow:
+           3px 3px 0 #000,
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+           1px 1px 0 #000;
+    }
+
+    .MainBrand {
+        margin: 30px 0;
+        height: auto;
+    }
+
+    .MainBrand a {
+        height: 100%;
+        width: 31%;
+    }
+
+    .News {
+        height: auto;
+    }
+
+    .News > div {
+        width: 80%;
+    } 
+}

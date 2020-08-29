@@ -1,0 +1,53 @@
+
+.SliderBox__Wrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.SliderBox {
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    position: relative;
+    /* padding: 0 30px; */
+    width: 90%;
+    list-style-type: none;
+    padding-top: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.SliderBox ul{
+    padding: 0;
+}
+
+.Slide__Wrapper {
+    display: flex; 
+    flex-flow: row;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.SliderItem {
+    list-style-type: none;
+    width: 100%;
+}
+
+.PreviousArrow {
+    position: absolute;
+    left: 30px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.NextArrow {
+    position: absolute;
+    left: 60px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
