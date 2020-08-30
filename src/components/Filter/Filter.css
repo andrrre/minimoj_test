@@ -2,8 +2,9 @@
     display: flex;
     flex-flow: row;
     z-index: 99;
-    width: 100%;
+    width: 90%;
     justify-content: space-around;
+    margin: 15px auto;
 }
 
 .FilterSelect {
