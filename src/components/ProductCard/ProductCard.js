@@ -18,7 +18,7 @@ const ProductFrame = (props) => {
 
   useEffect(() => {
     const favorite = cookies.favorite ? [...cookies.favorite] : [];
-    if (favorite.includes(props.id)) {
+    if (favorite.includes(props.groupIdentity)) {
       setColor("#48A094");
       setD(fill);
     }

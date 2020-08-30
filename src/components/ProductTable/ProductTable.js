@@ -3,9 +3,11 @@ import React from 'react';
 import classes from './ProductTable.css';
 import ProductCard from '../ProductCard/ProductCard';
 import Spinner from '../UI/Spinner/Spinner';
+import {useCookies} from 'react-cookie';
 
 
 const ProductTable = props => {
+    const [cookies, setCookie] = useCookies();
 
     const {products, loading} = {products: props.products, loading: props.loading}
 
@@ -24,6 +26,10 @@ const ProductTable = props => {
         groupIdentity={prod.groupIdentity}/>
         }
         );
+
+    if (window.location.href.includes("/favorite") && cookies.favorite && !cookies.favorite.length) {
+        frame = null;
+    }
 
     if (loading) {
         frame = <Spinner />;

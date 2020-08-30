@@ -23,7 +23,7 @@
         grid-auto-rows: calc(50%-15px);
         grid-column-gap: 10px;
         grid-row-gap: 1em;
-        margin: 50px 0 0 0;
+        margin: 50px auto 0 auto;
         padding: 0 10px;
         outline: none !important;
     }

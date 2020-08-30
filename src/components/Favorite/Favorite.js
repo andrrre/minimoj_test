@@ -13,15 +13,16 @@ const Favorite = props => {
     const dispatch = useDispatch();
 
     const { products, loading } = useSelector(state => ({products: state.favorite.products, loading: state.favorite.loading}));
+    let pr = products;
 
-    useEffect(() => {cookies.favorite ? dispatch(actions.fetchFavorite([...cookies.favorite])) : null}, []);
-    useEffect(() => {dispatch(actions.fetchCustomCategories());}, []);
+    useEffect(() => { if (cookies.favorite) { 
+        cookies.favorite.length ? dispatch(actions.fetchFavorite([...cookies.favorite])) : null;
+        cookies.favorite.length ? null : pr = [];
+        }
+    }, [cookies.favorite]);
+    useEffect(() => {dispatch(actions.fetchCustomCategories())}, []);
 
-    let frame = <ProductTable products={products} loading={loading} />;
-
-    if (!cookies.favorite) {
-        frame = <p>You don't have any items yet!</p>;
-    }
+    let frame = <ProductTable products={pr} loading={loading} />;
 
     return(
         <div className={classes.Favorite}>
