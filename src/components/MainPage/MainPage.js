@@ -55,31 +55,19 @@ const Main = (props) => {
       </section>
       <section className={classes.News}>
         <div className={classes.NewsItem}>
-          <div></div>
-          <h2>News1</h2>
-          <p>
-            We're a growing family of 282 designers and makers from around the
-            world
-          </p>
-          <Link to="/">Discover more</Link>
+          <h2>Shop for your baby!</h2>
+          <div className={classes.NewsItemImgFirst}></div>
+          <Link to="/category/383">Discover more</Link>
         </div>
         <div className={classes.NewsItem}>
-          <div></div>
-          <h2>News2</h2>
-          <p>
-            We're a growing family of 282 designers and makers from around the
-            world
-          </p>
-          <Link to="/">Discover more</Link>
+          <h2>Choose your kids raincoat!</h2>
+          <div className={classes.NewsItemImgSecond}></div>
+          <Link to="/category/22">Discover more</Link>
         </div>
         <div className={classes.NewsItem}>
-          <div></div>
-          <h2>News3</h2>
-          <p>
-            We're a growing family of 282 designers and makers from around the
-            world
-          </p>
-          <Link to="/">Discover more</Link>
+          <h2>Kids T-shirts</h2>
+          <div className={classes.NewsItemImgThird}></div>
+          <Link to="/category/44">Discover more</Link>
         </div>
       </section>
       <h3 style={{margin: "0 auto", width: "90%"}}>TOP PRODUCTS</h3>

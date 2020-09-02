@@ -10,6 +10,7 @@
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .MainImage > div {
@@ -67,7 +68,7 @@
 
 .News {
     width: 90%;
-    height: 17vh;
+    height: 50vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -76,17 +77,53 @@
     box-sizing: border-box;
 }
 
-.News > div {
-    width: 33%;
+.News a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.NewsItem {
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-flow: column;
-} 
+}
 
-.News a {
-    text-decoration: none;
-    color: lightseagreen;
+.NewsItem > a {
+    font-size: 1.5rem;
+}
+
+.NewsItemImgFirst {
+    background-image: url('../../assets/images/playing-child-baby.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.NewsItemImgSecond {
+    background-image: url('../../assets/images/raincoats.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.NewsItemImgThird {
+    background-image: url('../../assets/images/Tshirt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {

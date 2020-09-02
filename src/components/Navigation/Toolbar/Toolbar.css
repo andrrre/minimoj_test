@@ -14,6 +14,7 @@
     transition: transform 0.3s ease;
     flex-wrap: wrap;
     z-index: 100;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .Toolbar nav {
