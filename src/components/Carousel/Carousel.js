@@ -43,6 +43,7 @@ const CarouselSlider = (props) => {
       name={pr.name}
       price={pr.price}
       shop={pr.shop}
+      groupIdentity={prod.groupIdentity}
       />
       );
     });
