@@ -34,22 +34,22 @@ const Main = (props) => {
         </div>
       </section>
       <section className={classes.MainBrand}>
-        <Link to="/">
+        <Link to="/brand/1694">
           <img src={MiniRodiniImage} alt="MiniRodini" />
         </Link>
-        <Link to="/">
+        <Link to="/brand/830">
           <img src={AdidasImage} alt="Adidas" />
         </Link>
-        <Link to="/">
+        <Link to="/brand/1563">
           <img src={LindexImage} alt="Lindex" />
         </Link>
-        <Link to="/">
+        <Link to="/brand/217">
           <img src={ReimaImage} alt="Reima" />
         </Link>
-        <Link to="/">
+        <Link to="/brand/1669">
           <img src={JeckImage} alt="Jeck" />
         </Link>
-        <Link to="/">
+        <Link to="/brand/2780">
           <img src={PolarnImage} alt="Polarn" />
         </Link>
       </section>

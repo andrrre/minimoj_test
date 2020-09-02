@@ -71,6 +71,13 @@ const Search = (props) => {
       arr.push(v[0]);
       dispatch(actions.updateQuery({...productQueryAll, category_ids: arr, query: ''}));
     }
+
+    if (window.location.href.includes("/brand/")) {
+      const v = window.location.href.match(/[^brand\/]*$/);
+      const arr = [];
+      arr.push(v[0]);
+      dispatch(actions.updateQuery({...productQueryAll, brand_ids: arr, query: ''}));
+    }
   },[window.location.href]);
 
   useEffect(() => {
@@ -81,9 +88,18 @@ const Search = (props) => {
       .catch( err => {});
     }
 
+    if (window.location.href.includes("/brand/") && !loading) {
+      const v = window.location.href.match(/[^brand\/]*$/);
+      axios.get('http://178.62.199.65/api/brand/'+v[0])
+      .then( res=> {setCurrentCategoryName(res.data.brandName)})
+      .catch( err => {});
+    }
+
     if (window.location.href.match(/[search\/]*$/)[0] && countPage && !loading) {
       setCurrentPageHead(`We found ${countPage} results for "${query}"`);
-    } else if (window.location.href.match(/[^category\/]*$/)[0] && currentCategoryName && !loading) {
+    } else if ((window.location.href.match(/[^category\/]*$/)[0] || 
+      window.location.href.match(/[^brand\/]*$/)[0]) && 
+      currentCategoryName && !loading) {
       setCurrentPageHead(`${currentCategoryName}`);
     } else {
       setCurrentPageHead(null);

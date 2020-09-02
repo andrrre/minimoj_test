@@ -20,6 +20,7 @@ const app = props => {
           <Route path="/favorite" exact render={props => <Favorite {...props} />} />
           <Route path="/product/:id" exact render={props => <ProductPage {...props} />} />
           <Route path="/category/:id" exact render={props => <Search {...props} />} />
+          <Route path="/brand/:id" exact render={props => <Search {...props} />} />
           <Route path="/" exact component={props => <MainPage {...props} />} />
           <Redirect to="/" />
         </Switch>
