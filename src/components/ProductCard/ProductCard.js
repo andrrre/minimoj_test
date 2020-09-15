@@ -25,18 +25,18 @@ const ProductFrame = (props) => {
     }
   }, []);
 
-  const cardStyle = {
-    // backgroundImage: `url(${props.img})`,
-    // backgroundSize: "contain",
-    // backgroundPosition: "center center",
-    // backgroundRepeat: "no-repeat",
-    width: "50%",
-    height: "25vh",
-    margin: "auto",
-    padding: "0",
-    boxSizing: " border-box",
-    zIndex: "1",
-  };
+  // const cardStyle = {
+  //   // backgroundImage: `url(${props.img})`,
+  //   // backgroundSize: "contain",
+  //   // backgroundPosition: "center center",
+  //   // backgroundRepeat: "no-repeat",
+  //   width: "50%",
+  //   height: "25vh",
+  //   margin: "0 auto",
+  //   padding: "0",
+  //   boxSizing: " border-box",
+  //   zIndex: "1",
+  // };
 
   const favoriteToggleHandler = () => {
     setColor(color === "black" ? "#48A094" : "black");
@@ -65,7 +65,7 @@ const ProductFrame = (props) => {
               <path d={d} fill={color}></path>
             </svg>
           </div>
-          <ReactImageFallback style={cardStyle} src={`${props.img}`} fallbackImage={PhotoIcon}/>
+          <ReactImageFallback className={classes.Image} src={`${props.img}`} fallbackImage={PhotoIcon}/>
         </div>
         <Link to={`/product/${props.id}`}>
           <h3 style={{ color: "black" }}>{props.brand}</h3>
