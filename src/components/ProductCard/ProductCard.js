@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 
 import { Link, withRouter } from "react-router-dom";
+import ReactImageFallback from 'react-image-fallback';
 import classes from "./ProductCard.css";
 import HeartIcon from "../../assets/images/heart.svg";
 import PhotoIcon from "../../assets/images/photo.png";
@@ -25,13 +26,13 @@ const ProductFrame = (props) => {
   }, []);
 
   const cardStyle = {
-    backgroundImage: `url(${props.img})`,
-    backgroundSize: "contain",
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat",
-    width: "100%",
+    // backgroundImage: `url(${props.img})`,
+    // backgroundSize: "contain",
+    // backgroundPosition: "center center",
+    // backgroundRepeat: "no-repeat",
+    width: "50%",
     height: "25vh",
-    margin: "0",
+    margin: "auto",
     padding: "0",
     boxSizing: " border-box",
     zIndex: "1",
@@ -64,9 +65,7 @@ const ProductFrame = (props) => {
               <path d={d} fill={color}></path>
             </svg>
           </div>
-          <div style={cardStyle}>
-            <img></img>
-          </div>
+          <ReactImageFallback style={cardStyle} src={`${props.img}`} fallbackImage={PhotoIcon}/>
         </div>
         <Link to={`/product/${props.id}`}>
           <h3 style={{ color: "black" }}>{props.brand}</h3>
