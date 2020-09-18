@@ -98,33 +98,24 @@
 
 .NewsItemImgFirst {
     background-image: url('../../assets/images/playing-child-baby.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 20vh;
-    overflow: hidden;
-    border-radius: 10px;
 }
 
 .NewsItemImgSecond {
     background-image: url('../../assets/images/raincoats.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 20vh;
-    overflow: hidden;
-    border-radius: 10px;
 }
 
 .NewsItemImgThird {
     background-image: url('../../assets/images/Tshirt.jpg');
+}
+
+.NewsItemImgFirst, .NewsItemImgSecond, .NewsItemImgThird {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 20vh;
+    height: 100%;
     overflow: hidden;
     border-radius: 10px;
-}
+ }
 
 @media (max-width: 768px) {
     .MainImage {
@@ -178,4 +169,8 @@
         width: 80%;
         margin: 15px auto;
     } 
+
+    .NewsItemImgFirst, .NewsItemImgSecond, .NewsItemImgThird {
+        height: 20vh;
+     }
 }
